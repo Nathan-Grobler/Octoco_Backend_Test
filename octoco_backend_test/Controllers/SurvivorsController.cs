@@ -44,13 +44,13 @@ namespace octoco_backend_test.Controllers
         }
 
         //void UpdateLocation(int survivorId, double latitude, double longitude);
-        [HttpPost("UpdateLocation/{id}")]
-        public ActionResult UpdateLocation(int id, [FromBody] LocationUpdate location)
+        [HttpPut("UpdateLocation/{id}/{latitude}/{longitude}")]
+        public ActionResult UpdateLocation(int id, double latitude, double longitude)
         {
             try
             {
-                survivorRepository.UpdateLocation(id, location.Latitude, location.Longitude);
-                return Ok($"location of survivor {id} updated to ({location.Latitude}, {location.Longitude}).");
+                survivorRepository.UpdateLocation(id, latitude, longitude);
+                return Ok($"location of survivor {id} updated to ({latitude}, {longitude}).");
             }
             catch (Exception err)
             {
