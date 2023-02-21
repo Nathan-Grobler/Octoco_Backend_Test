@@ -12,6 +12,11 @@ namespace octoco_backend_test.Repository
             this.appDBContext = appDBContext;
         }
 
+        public Survivor GetSurvivor(int survivorId)
+        {
+            return appDBContext.Survivors.Find(survivorId);
+        }
+
         public async Task<IEnumerable<Survivor>> GetSurvivors()
         {
             return await appDBContext.Survivors.ToListAsync();

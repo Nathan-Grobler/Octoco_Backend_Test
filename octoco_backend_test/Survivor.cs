@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
+using octoco_backend_test.Models;
 
 namespace octoco_backend_test
 {
@@ -12,8 +13,6 @@ namespace octoco_backend_test
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public Dictionary<string, int>? Inventory { get; set; }
-
         public bool isInfected { get; set; }
-        // name, age, gender and last location(latitude/longitude).
     }
 }

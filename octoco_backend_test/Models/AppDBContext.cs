@@ -21,7 +21,7 @@ namespace octoco_backend_test.Models
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Survivor>().Ignore(s => s.Inventory).HasData(
-                new Survivor { Id = 1, Name = "John", Age = 26, Gender = Gender.Male, Inventory = new Dictionary<string, int> { { "Water Bottles", 5 }, { "Ammo", 49 }, { "Guns", 1 } }, Latitude = -32.241844 , Longitude = 22.2995 }
+                new Survivor { Id = 1, Name = "John", Age = 26, Gender = Gender.Male, Inventory = new Dictionary<string, int> { { "Water Bottles", 5 }, { "Ammo", 49 }, { "Guns", 1 } }, Latitude = -32.241844 , Longitude = 22.2995, isInfected = false }
                 );
         }
     }

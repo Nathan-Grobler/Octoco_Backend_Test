@@ -1,4 +1,4 @@
-﻿namespace octoco_backend_test
+﻿namespace octoco_backend_test.Models
 {
     public enum Gender
     {
