@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using octoco_backend_test.Models;
-
+using octoco_backend_test.Repository;
 
 namespace octoco_backend_test
 {
@@ -19,7 +19,7 @@ namespace octoco_backend_test
         {
             services.AddDbContext<AppDBContext>(options => 
                  options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
-
+            services.AddScoped<ISurvivorRepository, SurvivorRespository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

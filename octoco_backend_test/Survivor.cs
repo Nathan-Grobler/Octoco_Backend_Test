@@ -12,6 +12,8 @@ namespace octoco_backend_test
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public Dictionary<string, int>? Inventory { get; set; }
+
+        public bool isInfected { get; set; }
         // name, age, gender and last location(latitude/longitude).
     }
 }
