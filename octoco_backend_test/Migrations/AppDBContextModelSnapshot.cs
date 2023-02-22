@@ -35,6 +35,9 @@ namespace octoco_backend_test.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("int");
 
+                    b.Property<string>("Inventory")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Latitude")
                         .HasColumnType("float");
 
@@ -57,9 +60,32 @@ namespace octoco_backend_test.Migrations
                             Id = 1,
                             Age = 26,
                             Gender = 0,
+                            Inventory = "{\"Water Bottles\":5,\"Ammo\":49,\"Guns\":1}",
                             Latitude = -32.241844,
                             Longitude = 22.299499999999998,
                             Name = "John",
+                            isInfected = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Age = 33,
+                            Gender = 1,
+                            Inventory = "{\"Food\":10,\"Medicine\":2,\"Ammo\":15}",
+                            Latitude = 40.712775999999998,
+                            Longitude = -74.005973999999995,
+                            Name = "Mary",
+                            isInfected = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Age = 45,
+                            Gender = 0,
+                            Inventory = "{\"Water Bottles\":2,\"Gasoline\":5}",
+                            Latitude = 51.507351,
+                            Longitude = -0.12775800000000001,
+                            Name = "Tom",
                             isInfected = false
                         });
                 });

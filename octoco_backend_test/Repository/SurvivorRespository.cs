@@ -28,7 +28,7 @@ namespace octoco_backend_test.Repository
             appDBContext.SaveChanges();
         }
 
-        void ISurvivorRepository.UpdateinfectionStatus(int survivorId)
+        void ISurvivorRepository.FlagAsInfected(int survivorId)
         {
             var survivor = appDBContext.Survivors.FirstOrDefault(s => s.Id == survivorId);
             if (survivor != null)

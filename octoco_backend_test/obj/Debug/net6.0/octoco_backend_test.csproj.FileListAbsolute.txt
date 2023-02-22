@@ -122,3 +122,4 @@ C:\git\octoco_backend_test\octoco_backend_test\obj\Debug\net6.0\refint\octoco_ba
 C:\git\octoco_backend_test\octoco_backend_test\obj\Debug\net6.0\octoco_backend_test.pdb
 C:\git\octoco_backend_test\octoco_backend_test\obj\Debug\net6.0\octoco_backend_test.genruntimeconfig.cache
 C:\git\octoco_backend_test\octoco_backend_test\obj\Debug\net6.0\ref\octoco_backend_test.dll
+C:\git\octoco_backend_test\octoco_backend_test\bin\Debug\net6.0\Newtonsoft.Json.dll
