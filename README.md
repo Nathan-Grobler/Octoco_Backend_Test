@@ -1,4 +1,4 @@
-<h1>Project Title</h1>
+<h1>SNN(Octoco Backend Test)</h1>
 
 SSN (Zombie Survival Social Network). The world as we know it has fallen into an apocalyptic scenario. A laboratory-made virus is transforming human beings and animals into zombies, hungry for fresh flesh.
 
